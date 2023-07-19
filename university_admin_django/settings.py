@@ -56,7 +56,7 @@ ROOT_URLCONF = 'university_admin_django.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
+        'DIRS': ['C:/Users/migue/Desktop/code/python/django/university_admin_django/Modules/Academic/templates']
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -119,6 +119,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = "xxxxxxxxxx@gmail.com"
+EMAIL_HOST_PASSWORD = "xxxxxxxx"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
